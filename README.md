@@ -6,7 +6,8 @@ Get the benefits of chaining without sacrificing modularity!
 var $ = require('modular-chainer'),
     parse = require('./parse'),
     walk = require('./walk'),
-    stringify = require('./stringify');
+    stringify = require('./stringify'),
+    diff = require('diff');
 
 var transformedDiff = $(sourceCode)
     .$(parse, {semicolons: 'loose'})
