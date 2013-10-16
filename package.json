@@ -1,6 +1,6 @@
 {
   "name": "modular-chainer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Chain local functions like member functions",
   "main": "index.js",
   "scripts": {
