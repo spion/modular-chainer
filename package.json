@@ -1,0 +1,25 @@
+{
+  "name": "modular-chainer",
+  "version": "0.1.0",
+  "description": "Chain non-member functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "spion",
+  "license": "MIT",
+  "keywords": [
+    "chain",
+    "member",
+    "function"
+  ],
+  "devDependencies": {
+    "tape": "~2.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "tape": "~2.0.0"
+  }
+}
