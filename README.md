@@ -34,7 +34,9 @@ Extracts the value.
 
 # performance
 
-The performance cost is negligable in most cases.
+The performance cost is negligable in many cases. However, keep in mind that 
+new objects are created on every chain operation. Fast operations on primitives
+will suffer a lot: if you're using it to do math, it will be slow.
 
 # license
 
