@@ -18,7 +18,7 @@ t.test('chain', function(t) {
         return y < 10; 
     }).$(reduce, function(acc, el) { 
         return acc + el 
-    }).to(Math.pow, 2).$()
+    }).to(Math.pow, 2).val;
 
     t.equals(res, 14*14);
         

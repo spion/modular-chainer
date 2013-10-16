@@ -24,7 +24,7 @@ for (var k = 0; k < 500000; ++k) {
     res += $(arr).$(map, mapfn)
         .$(filter, filterfn)
         .$(push, k)
-        .$(reduce, reducefn).$();
+        .$(reduce, reducefn).val;
 }
 
 var res2 = 0, t2 = Date.now();

@@ -8,24 +8,31 @@ var $ = require('modular-chainer'),
     walk = require('./walk'),
     stringify = require('./stringify');
 
-var transformedCode = $(sourceCode)
+var transformedDiff = $(sourceCode)
     .$(parse, {semicolons: 'loose'})
     .$(walk, function(node) { ... })
     .$(stringify)
-    .to(diff, sourceCode)
-    .$();
+    .to(diff, sourceCode).val;
 ```
 
 
-### `$(obj).$(fn, arg, ...)` 
+### `$(val).$(fn, arg, ...)` 
 
-The equivalent of `fn.call(obj, arg, ...)`
+Call `fn` as if its attached to `val`. 
 
-$$$ `$(obj).to(fn, arg, ...) 
+The equivalent of `fn.call(val, arg, ...)`
 
-The equivalent of fn(obj, arg, ...)
+### `$(val).to(fn, arg, ...) 
 
-and $() extracts the value.
+Call `fn` with `val` as the first argument. 
+
+The equivalent of `fn(val, arg, ...)`
+
+### `.val`
+
+Extracts the value.
+
+# performance
 
 The performance cost is negligable in most cases.
 
